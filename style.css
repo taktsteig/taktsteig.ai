@@ -1,0 +1,12 @@
+/* style.css */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0F1B2D;
+  color: #E0E0E0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
