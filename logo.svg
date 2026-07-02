@@ -3,7 +3,7 @@
     .text { font: 500 48px 'Inter', sans-serif; fill: #0F1B2D; }
     .rising { stroke: #E91E63; stroke-width: 1.8; fill: none; }
   </style>
-  <text x="0" y="58" class="text">taktstei</text>
+  <text x="0" y="58" class="text">taktsteig</text>
   <!-- Kleinster Aufstieg am Ende -->
   <line x1="228" y1="54" x2="235" y2="50" class="rising"/>
   <text x="0" y="74" font-size="16" fill="#888" font-style="italic">/ˈtaktʃˌʃtaɪ̯k/</text>
