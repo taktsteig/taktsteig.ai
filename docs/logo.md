@@ -51,6 +51,7 @@ Der Aufstieg wird über `::after` realisiert:
   transform: translateY(-50%) rotate(22deg);
   transform-origin: left;
 }
+```
 
 SVG
 Siehe: assets/logo.svg
