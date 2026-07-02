@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>taktsteig</title>
   <style>
-    /* Reset & Layout */
+    /* === Basis-Layout === */
     body {
       margin: 0;
       padding: 0;
@@ -20,35 +20,32 @@
       text-align: center;
     }
 
-    /* Logo Container */
+    /* === Logo-Container === */
     .logo-container {
       position: relative;
       display: inline-block;
-      margin: 1rem 0;
       line-height: 1;
     }
 
-    /* Haupt-Schriftzug */
+    /* === Haupttext: taktstei + spezielles g === */
     .logo {
-      font-size: 3.4rem;
+      font-size: 3.6rem;
       font-weight: 500;
       letter-spacing: -0.8px;
       color: #0F1B2D;
-      background: transparent;
-      padding: 0;
       margin: 0;
     }
 
-    /* Nur Farbe, kein Outline */
+    /* Dark Mode - Anpassung */
     @media (prefers-color-scheme: dark) {
       .logo { color: #E0E0E0; }
     }
 
-    /* Der verbesserte "rising-g" – bessere Ausrichtung */
+    /* === Der "rising-g" mit feinem Aufstieg === */
     .rising-g {
       position: relative;
       display: inline-block;
-      padding-right: 7px; /* Platz für den Aufstieg */
+      padding-right: 6px; /* Platz für den Strich */
     }
 
     .rising-g::after {
@@ -57,14 +54,14 @@
       width: 7px;
       height: 1.8px;
       background: #E91E63; /* Rising Red */
-      top: 53%;             /* am Ende des Schwanzes */
-      left: 100%;           /* direkt angeschlossen */
+      top: 53%;             /* Aligned mit dem Auslauf des 'g' */
+      left: 100%;           /* Direkt am Ende des Buchstabens */
       transform: translateY(-50%) rotate(22deg);
       transform-origin: left;
-      border-radius: 1px;
+      border-radius: 0.5px;
     }
 
-    /* Phonetic Transcription */
+    /* === Aussprache (Phonetic) === */
     .phonetic {
       font-size: 1.1rem;
       font-weight: 400;
@@ -74,7 +71,7 @@
       display: block;
     }
 
-    /* Tagline */
+    /* === Untertitel / Tagline === */
     .tagline {
       font-size: 1.2rem;
       color: #B0B0B0;
@@ -83,21 +80,28 @@
       line-height: 1.5;
     }
 
-    /* Kleine Schriftgrößen auf Mobil */
+    /* === Mobile Optimierung === */
     @media (max-width: 480px) {
       .logo { font-size: 2.6rem; }
       .phonetic { font-size: 0.95rem; }
       .tagline { font-size: 1.1rem; }
+      .rising-g { padding-right: 5px; }
+      .rising-g::after {
+        width: 6px;
+        height: 1.6px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Logo mit integriertem Steig -->
   <div class="logo-container">
     <h1 class="logo">taktstei<span class="rising-g">g</span></h1>
     <span class="phonetic">/ˈtaktʃˌʃtaɪ̯k/</span>
   </div>
 
+  <!-- Botschaft -->
   <p class="tagline">where rhythm builds impact</p>
 
 </body>
