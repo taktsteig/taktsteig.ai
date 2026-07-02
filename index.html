@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>taktsteig</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0F1B2D;
+      color: #E0E0E0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .logo-container {
+      margin: 6rem 0 1.5rem 0;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .logo {
+      font-size: 3.2rem;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .logo span.rising-g {
+      position: relative;
+      display: inline-block;
+    }
+
+    .logo span.rising-g::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 2px;
+      background: #E91E63;
+      bottom: 4px;
+      right: -6px;
+      transform: rotate(25deg);
+      transform-origin: left;
+    }
+
+    .phonetic {
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #888;
+      margin: 0.4rem 0 0;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #B0B0B0;
+      max-width: 500px;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 2.6rem; }
+      .phonetic { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <h1 class="logo">taktstei<span class="rising-g">g</span></h1>
+    <p class="phonetic">/ˈtaktʃˌʃtaɪ̯k/</p>
+  </div>
+
+  <p class="tagline">where rhythm builds impact</p>
+
+</body>
+</html>
