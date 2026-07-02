@@ -1,26 +1,29 @@
 # taktsteig
 
-> where rhythm builds impact
+> where rhythm builds impact  
+> founding cycle 2026
 
-This is not automation.  
-This is **human-led AI systems**, rising with every cycle.
+This repository hosts the public practice of **taktsteig**:  
+a minimal framework for rhythm-driven AI guidance.
 
-- Open playbooks  
-- Minimal tools  
-- Intentional upgrades  
+No backend. No tracking. No SaaS.  
+Just human-led cycles, rising impact.
 
-We move not by scale —  
-but by **Takt**.  
-and **Steig**.
+- 📄 [Logo & Identity](docs/logo.md)
+- 🧰 Tools: `ts-cycle`, `ts-guide` (coming soon)
+- 🌐 Live site: [taktsteig.ai](https://taktsteig.ai)
 
 ---
 
-## 🧭 Get started
+We do not optimize for scale.  
+We optimize for **attention, rhythm, and incremental lift**.
 
-1. Read the [Playbook](playbook/core-v0.md)
-2. Install the CLI: `curl -L https://taktsteig.ai/install | sh`
-3. Run your first cycle: `taktsteig --cycle daily-review`
+The name `taktsteig` combines:
+- **Takt** (rhythm, pulse, beat)
+- **Steig** (rise, ascent, upward movement)
 
-> Source: [github.com/taktsteig](https://github.com/taktsteig)  
-> License: MPL-2.0  
-> Contact: [hallo@taktsteig.ai](mailto:hallo@taktsteig.ai)
+And the logo?  
+It’s not a brand.  
+It’s a **signal** — with a single rising line at the `g`.
+
+→ Because where rhythm is, lift can follow.
