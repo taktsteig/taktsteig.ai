@@ -1,72 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>taktsteig</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
+    /* Reset & Layout */
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0F1B2D;
-      color: #E0E0E0;
       margin: 0;
       padding: 0;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #0F1B2D;
+      color: #E0E0E0;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
+      justify-content: center;
+      text-align: center;
     }
 
+    /* Logo Container */
     .logo-container {
-      margin: 6rem 0 1.5rem 0;
-      text-align: center;
+      position: relative;
+      display: inline-block;
+      margin: 1rem 0;
       line-height: 1;
     }
 
+    /* Haupt-Schriftzug */
     .logo {
-      font-size: 3.2rem;
+      font-size: 3.4rem;
       font-weight: 500;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.8px;
+      color: #0F1B2D;
+      background: transparent;
+      padding: 0;
       margin: 0;
     }
 
-    .logo span.rising-g {
+    /* Nur Farbe, kein Outline */
+    @media (prefers-color-scheme: dark) {
+      .logo { color: #E0E0E0; }
+    }
+
+    /* Der verbesserte "rising-g" – bessere Ausrichtung */
+    .rising-g {
       position: relative;
       display: inline-block;
+      padding-right: 7px; /* Platz für den Aufstieg */
     }
 
-    .logo span.rising-g::after {
+    .rising-g::after {
       content: '';
       position: absolute;
-      width: 8px;
-      height: 2px;
-      background: #E91E63;
-      bottom: 4px;
-      right: -6px;
-      transform: rotate(25deg);
+      width: 7px;
+      height: 1.8px;
+      background: #E91E63; /* Rising Red */
+      top: 53%;             /* am Ende des Schwanzes */
+      left: 100%;           /* direkt angeschlossen */
+      transform: translateY(-50%) rotate(22deg);
       transform-origin: left;
+      border-radius: 1px;
     }
 
+    /* Phonetic Transcription */
     .phonetic {
       font-size: 1.1rem;
       font-weight: 400;
       font-style: italic;
       color: #888;
       margin: 0.4rem 0 0;
+      display: block;
     }
 
+    /* Tagline */
     .tagline {
       font-size: 1.2rem;
       color: #B0B0B0;
       max-width: 500px;
-      text-align: center;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      line-height: 1.5;
     }
 
+    /* Kleine Schriftgrößen auf Mobil */
     @media (max-width: 480px) {
       .logo { font-size: 2.6rem; }
       .phonetic { font-size: 0.95rem; }
+      .tagline { font-size: 1.1rem; }
     }
   </style>
 </head>
@@ -74,7 +95,7 @@
 
   <div class="logo-container">
     <h1 class="logo">taktstei<span class="rising-g">g</span></h1>
-    <p class="phonetic">/ˈtaktʃˌʃtaɪ̯k/</p>
+    <span class="phonetic">/ˈtaktʃˌʃtaɪ̯k/</span>
   </div>
 
   <p class="tagline">where rhythm builds impact</p>
